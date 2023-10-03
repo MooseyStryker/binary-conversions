@@ -22,9 +22,15 @@ const binaryStringToArray = str => {
 };
 
 const binaryToAscii = str => {
-  // Your code here 
+const binaryToAscii = str => {
+  let newStr = ""
+  str = binaryStringToArray(str)
+  for(let individual of str) {
+    newStr += String.fromCharCode(parseInt(individual,2))
+  }
+  return newStr
 };
-
+[]
 /******************************************************************************/
 
 console.log(binaryToAscii('011000010110001001100011'));

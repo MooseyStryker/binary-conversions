@@ -11,9 +11,7 @@ const asciiTo8bit = str => {
 for (let i = 0; i < str.length; i++) {
   let character = str.charCodeAt(i)
   character = character.toString(2)
-  // console.log(character)
   newStr += addZeros(character, 8)
-  // console.log(newStr)
 }
 return newStr;
 };
