@@ -1,10 +1,17 @@
 // Convert the integers in the console.logs below to base 10:
 
 /******************************************************************************/
+// const convertToBase10 = str => parseInt((str.substring(2)),2)
+const convertToBase10 = str => str[1] === "b" ? parseInt((str.substring(2)), 2) : parseInt(str,16)
 
-const convertToBase10 = str => {
-  // Your code here 
-};
+// const convertToBase10 = str => {
+//   if (str[1] === "b") {
+//   return parseInt((str.substring(2)),2)
+//   } else {
+//   return parseInt(str, 16)
+//   }
+// };
+
 
 /******************************************************************************/
 
