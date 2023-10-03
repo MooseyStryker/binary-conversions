@@ -1,10 +1,17 @@
 // Convert the integers in the console.logs below to base 16:
 
 /******************************************************************************/
+const convertToBase16 = element => element[1] === "b" ? `0x${(parseInt(element.substring(2),2)).toString(16)}` : `0x${element.toString(16)}`
 
-const convertToBase16 = element => {
-  // Your code here 
-};
+// const convertToBase16 = element => {
+//   if (element[1] === "b") {
+//     // element = element.substring(2)
+//     // element = parseInt(element,2)
+//     return `0x${(parseInt(element.substring(2),2)).toString(16)}`
+//   } else {
+//   return `0x${element.toString(16)}`
+//   }
+// };
 
 /******************************************************************************/
 
