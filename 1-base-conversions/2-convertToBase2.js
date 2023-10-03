@@ -1,10 +1,16 @@
 // Convert the integers in the console.logs below to base 2
 
 /******************************************************************************/
+const convertToBase2 = element => element[1] === "x" ? `0b${(parseInt(element, 16)).toString(2)}` : `0b${element.toString(2)}`
 
-const convertToBase2 = element => {
-  // Your code here 
-};
+// const convertToBase2 = element => {
+//   if (element[1] === "x") {
+//   element = (parseInt(element, 16)).toString(2)
+//   return `0b${element}`
+//   }
+//   return `0b${element.toString(2)}`
+
+// };
 
 /******************************************************************************/
 
